@@ -40,8 +40,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
-  }
+  ENV.baseURL = '/ember-deployment-example/';
+  ENV.locationType = 'hash';
+}
 
   return ENV;
 };
